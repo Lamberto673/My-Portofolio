@@ -95,13 +95,13 @@ const Contact = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 p-4 bg-[#16161c] border border-white/5 rounded-lg hover:border-white/10 transition-colors"
+              className="flex items-center gap-3 p-3 sm:p-4 bg-[#16161c] border border-white/5 rounded-lg hover:border-white/10 transition-colors"
             >
               <FontAwesomeIcon
                 icon={social.icon}
-                className={`text-4xl text-zinc-400 ${Social[social.name]} transition duration-200 ease-in-out`}
+                className={`text-2xl text-zinc-400 ${Social[social.name]} transition duration-200 ease-in-out`}
               />
-              <span className="text-zinc-300 text-2xl">{social.name}</span>
+              <span className="text-zinc-300 text-sm sm:text-base font-medium">{social.name}</span>
             </a>
           ))}
         </div>

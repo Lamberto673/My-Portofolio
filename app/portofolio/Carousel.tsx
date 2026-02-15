@@ -30,8 +30,8 @@ const Carousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="relative w-100 h-150 overflow-hidden rounded-lg border-2 border-none shadow-2xl hover:shadow-gray-600 transition duration-300   ease-in-out ">
+    <div className="flex flex-col items-center gap-4 w-150">
+      <div className="relative w-full  h-64 sm:h-96 md:h-150 overflow-hidden rounded-lg border-2 border-none shadow-2xl hover:shadow-gray-600 transition duration-300 ease-in-out">
         {/* Sliding track containing all images */}
         <div
           className="flex h-full transition-transform duration-500 ease-in-out"

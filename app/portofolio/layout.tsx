@@ -1,5 +1,6 @@
 import React from "react";
 import UserInfo from "../components/UserInfo";
+import MobileNav from "./MobileNav";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   const navItems = [
@@ -14,10 +15,11 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen bg-[#0a0a0f]">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/95 backdrop-blur-sm border-b border-white/5">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <UserInfo />
 
-          <ul className="flex items-center gap-1">
+          {/* Desktop nav */}
+          <ul className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
               <li key={item.label}>
                 <a
@@ -29,6 +31,9 @@ const layout = ({ children }: { children: React.ReactNode }) => {
               </li>
             ))}
           </ul>
+
+          {/* Mobile hamburger */}
+          <MobileNav />
         </div>
       </nav>
 

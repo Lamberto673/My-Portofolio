@@ -44,10 +44,8 @@ const About = () => {
         </div>
 
         {/* Masonry Gallery */}
-        <div className="h-110">
-          <div
-            style={{ height: "200px", width: "500px", position: "relative" }}
-          >
+        <div className="h-70 md:h-110">
+          <div className="relative h-50 w-full md:w-125">
             <CardSwap
               cardDistance={60}
               verticalDistance={70}
